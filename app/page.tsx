@@ -31,7 +31,9 @@ export default function Home() {
             <Link href="/login" className="hidden sm:inline-block text-sm font-medium hover:text-primary transition-colors">
               Log in
             </Link>
-            <Button className="rounded-full shadow-lg shadow-primary/20">Get Started</Button>
+            <Button asChild className="rounded-full shadow-lg shadow-primary/20">
+              <Link href="/signup">Get Started</Link>
+            </Button>
           </div>
         </div>
       </header>
@@ -58,9 +60,11 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="h-12 px-8 rounded-full text-base font-semibold w-full sm:w-auto gap-2 group">
-                Start Creating Free
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <Button asChild size="lg" className="h-12 px-8 rounded-full text-base font-semibold w-full sm:w-auto gap-2 group">
+                <Link href="/signup">
+                  Start Creating Free
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
               <Button size="lg" variant="outline" className="h-12 px-8 rounded-full text-base font-semibold w-full sm:w-auto gap-2 backdrop-blur-sm bg-background/50 border-border/50">
                 <PlayCircle className="h-5 w-5" />
@@ -180,8 +184,8 @@ export default function Home() {
              <p className="text-xl text-muted-foreground mb-10">
                Join thousands of creators and marketers who are saving 20+ hours a week with VdoMaker.
              </p>
-             <Button size="lg" className="h-14 px-10 rounded-full text-lg font-semibold shadow-xl shadow-primary/20">
-               Start Your Free Trial
+             <Button asChild size="lg" className="h-14 px-10 rounded-full text-lg font-semibold shadow-xl shadow-primary/20">
+               <Link href="/signup">Start Your Free Trial</Link>
              </Button>
              <p className="mt-4 text-sm text-muted-foreground">No credit card required. 14-day free trial.</p>
            </div>
