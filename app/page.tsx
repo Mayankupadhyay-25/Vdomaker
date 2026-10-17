@@ -28,11 +28,11 @@ export default function Home() {
             <Link href="#pricing" className="hover:text-foreground transition-colors">Pricing</Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="/login" className="hidden sm:inline-block text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/sign-in" className="hidden sm:inline-block text-sm font-medium hover:text-primary transition-colors">
               Log in
             </Link>
             <Button asChild className="rounded-full shadow-lg shadow-primary/20">
-              <Link href="/signup">Get Started</Link>
+              <Link href="/sign-up">Get Started</Link>
             </Button>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button asChild size="lg" className="h-12 px-8 rounded-full text-base font-semibold w-full sm:w-auto gap-2 group">
-                <Link href="/signup">
+                <Link href="/sign-up">
                   Start Creating Free
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -185,7 +185,7 @@ export default function Home() {
                Join thousands of creators and marketers who are saving 20+ hours a week with VdoMaker.
              </p>
              <Button asChild size="lg" className="h-14 px-10 rounded-full text-lg font-semibold shadow-xl shadow-primary/20">
-               <Link href="/signup">Start Your Free Trial</Link>
+               <Link href="/sign-up">Start Your Free Trial</Link>
              </Button>
              <p className="mt-4 text-sm text-muted-foreground">No credit card required. 14-day free trial.</p>
            </div>

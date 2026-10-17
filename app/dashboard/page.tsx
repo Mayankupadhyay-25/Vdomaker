@@ -28,7 +28,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     if (!isLoading && !user) {
-      router.push("/login");
+      router.push("/sign-in");
       return;
     }
 
@@ -65,7 +65,7 @@ export default function DashboardPage() {
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
-    router.push("/login");
+    router.push("/sign-in");
     router.refresh();
   };
 
